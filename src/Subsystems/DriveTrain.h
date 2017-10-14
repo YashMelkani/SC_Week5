@@ -11,11 +11,14 @@ private:
 	// for methods that implement subsystem capabilities
 	Jaguar* driveMotor;
 	Ultrasonic* ultrasonicSensor;
+	double speed;
 
 public:
 	DriveTrain();
 	void InitDefaultCommand();
 	double getUltra();
+	void MotorSpeed(double speed);
+	~DriveTrain();
 };
 
 #endif  // DriveTrain_H
